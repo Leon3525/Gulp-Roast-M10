@@ -1,0 +1,585 @@
+
+body {
+  background-color:#f2f2f2;
+  margin: 0px;
+}
+
+.theDrinks {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "headingBold" 
+    "darkBlend" 
+    "mediumRoast";
+    background-color: #2196F3;
+    gap: 5px;
+}
+
+.darkBlend {
+    background-color: #f2f2f2;
+    padding: 25px;
+}
+
+.mediumRoast{
+    background-color: #f2f2f2;
+    padding: 25px;
+}
+
+.theBeans {
+  display: grid;
+  grid-template-columns: 1fr; 
+  grid-template-areas:
+  "headingBold"
+  "espressoBeans"
+  "coffeeBeans" 
+  "coffeeBeansLR"; /* All in one column */
+  background-color: #2196F3;
+  gap: 5px;
+}
+
+.espressoBeans{
+    grid-area: espressoBeans;
+    background-color: #f2f2f2;
+    padding: 25px;
+}
+
+.coffeeBeans{
+    grid-area: coffeeBeans;
+    background-color: #f2f2f2;
+    padding: 25px;
+}
+
+.coffeeBeansLR{
+    grid-area: coffeeBeansLR;
+    background-color: #f2f2f2;
+    padding: 25px;
+}
+  
+img {
+    max-width: 100%;
+    height: 75vh;
+    object-fit: cover;
+    margin-bottom: 0px;
+}
+
+.hero{
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+  }
+
+  picture {
+    background-size: contain;
+    height: auto;
+  }
+  
+  section {
+    height: auto;
+    background-color: #f2f2f2;
+    ;
+  }
+
+   /* Ensures the container fills the available space */
+   .hero {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  /* Makes the image fill its container */
+  picture, picture img {
+    width: 100%;
+    height: 75vh;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 0px;
+  }
+
+  .overlay-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: auto;
+    z-index: 10;
+  }
+
+  .button-container {
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+  button{
+    background-color: #D98555;
+    border: none;
+    color: white;
+    margin: 20px;
+    margin-bottom: 20px;
+    padding: 15px 32px;
+    border-radius: 16px;
+    text-align: center;
+    display: block;
+    font-size: 40px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: black;
+    border: none;
+    color: white;
+    margin: 20px;
+    margin-bottom: 20px;
+    padding: 15px 32px;
+    border-radius: 16px;
+    text-align: center;
+    display: block;
+    font-size: 40px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  
+  .aboutSection {
+    display: grid;
+    grid-template-areas: 
+    "aboutSection";
+    grid-template-columns: minmax(250px, 500px);
+    gap: 100px; /* Adds space between columns */
+  }
+
+  .headingBold{
+    background-color: #082B59;
+    color: #F2F2F2;
+    padding: 1px;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+  }
+
+  /* alternative heading color */
+  .headingBoldPeach{
+    background-color: #D98555;
+    color: #F2F2F2;
+    padding: 1px;
+    /* margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px; */
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+  }
+  
+  .bodyText{
+    background-color: #F2F2F2;
+    color: #D98555;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding: 40px;
+    text-align: left;
+    flex-direction: column;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .location-items {
+    display: flex;
+  }
+
+  .footer{
+    background-color: #131D26;
+    color: #F2F2F2;
+    padding: 20px;
+    text-align: center;
+    margin-right: 0px;
+    margin-left: 0px;
+    font-family: lato;
+    font-size: 40px;
+    font-style: italic;
+    font-size: 20px;
+  }
+  
+  div {
+    width: 100%;
+    margin: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  
+  li {
+    display: flex;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    flex-direction: column;
+    justify-content: center space-between; 
+    align-items: center;
+    text-align: left;
+  }
+  
+  h2 {
+    /* should this be a grid instead? */
+    display: flex;
+    justify-content: flex-start;
+    /* background-color: #082B59; */
+  }
+
+  /* START Basic Styling for Navigation */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #333;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #D98555;
+    border-radius: 5px;
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+/* END Basic Styling for Navigation */
+
+/* FONTS */
+/* FONTS */
+/* FONTS */
+/* FONTS */
+/* FONTS */
+/* FONTS */
+
+
+  /* .lato-thin {
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .lato-light {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  } */
+  
+  .lato-regular {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+/*   
+  .lato-bold {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .lato-black {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .lato-thin-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .lato-light-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+ } */
+   
+  
+  .lato-regular-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  /* .lato-bold-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .lato-black-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+
+  .poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  } */
+  
+  /* .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  } */
+  
+  h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  /* .poppins-extrabold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .poppins-thin-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .poppins-extralight-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  .poppins-light-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .poppins-regular-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .poppins-medium-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .poppins-semibold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+  } */
+  
+  /* .poppins-bold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .poppins-extrabold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+  }
+  
+  .poppins-black-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  } */
+  
+  @media screen and (min-width: 800px) {
+    body {
+      background-color: lightgreen;
+    }
+    .headingBoldPeach{
+      background-color: #D98555;
+      color: #F2F2F2;
+      padding: 1px;
+      /* margin-top: 0px;
+      margin-left: 0px;
+      margin-right: 0px; */
+      text-align: center;
+      font-family: "Poppins", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 30px;
+      width: 200px;
+    }
+    .theDrinks {
+      display: grid;
+      grid-template-columns: 200px 2fr 2fr;
+      grid-template-areas:
+      "headingBold darkBlend darkBlend"
+      "headingBold mediumRoast mediumRoast";
+      background-color: #2196F3;
+      gap: 5px;
+  }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    body {
+      background-color: purple;
+    }
+    .headingBoldPeach{
+      background-color: #D98555;
+      color: #F2F2F2;
+      padding: 1px;
+      /* margin-top: 0px;
+      margin-left: 0px;
+      margin-right: 0px; */
+      text-align: center;
+      font-family: "Poppins", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 30px;
+      width: 200px;
+    }
+    .theDrinks {
+      display: grid;
+      grid-template-columns: 200px 2fr 2fr;
+      grid-template-areas:
+      "headingBold darkBlend darkBlend"
+      "headingBold mediumRoast mediumRoast";
+      background-color: #2196F3;
+      gap: 5px;
+  }
+  }
+
+  @media screen and (min-width: 800px) {
+    body {
+      background-color: lightgreen;
+    }
+    .theBeans {
+      display: grid;
+      grid-template-columns: 1fr 2fr 2fr 2fr;
+      grid-template-areas:
+      "headingBold espressoBeans coffeeBeans coffeeBeansLR"; /* All in one row */
+      background-color: #2196F3;
+      gap: 5px;
+  }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    body {
+      background-color: purple;
+    }
+    .theBeans {
+      display: grid;
+      grid-template-columns: 1fr 2fr 2fr 2fr;
+      grid-template-areas:
+     "headingBold espressoBeans coffeeBeans coffeeBeansLR"; /* All in one row */
+      background-color: #2196F3;
+      gap: 5px;
+  }
+  }
+  
+  
+
+  @media screen and (min-width: 800px) {
+    body {
+      background-color: lightgreen;
+    }
+    .aboutSection {
+      display: grid;
+      grid-template-columns: minmax(250px, 3fr) 300px;
+      gap: 100px; /* Adds space between columns */
+    }
+    
+    .aboutSection div {
+      word-wrap: break-word; /* Ensures text wraps */
+      overflow-wrap: break-word; /* Alternative for better support */
+      white-space: normal; /* Prevents text from staying in one long line */
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    body {
+      background-color: purple;
+    }
+    .aboutSection {
+      display: grid;
+      grid-template-columns: minmax(250px, 3fr) 300px;
+      gap: 100px; /* Adds space between columns */
+    }
+    
+    .aboutSection div {
+      word-wrap: break-word; /* Ensures text wraps */
+      overflow-wrap: break-word; /* Alternative for better support */
+      white-space: normal; /* Prevents text from staying in one long line */
+    }
+  }
